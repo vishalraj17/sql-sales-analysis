@@ -34,7 +34,7 @@ Revenue is not stored directly and is calculated dynamically using:
 Revenue = OrderQuantity × ProductPrice
 
 
-##Tools & Technologies
+## Tools & Technologies
 - Database: MySQL
 
 - Language: SQL
