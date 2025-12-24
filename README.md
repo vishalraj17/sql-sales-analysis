@@ -90,24 +90,21 @@ Revenue = OrderQuantity × ProductPrice
 
 ## Example Queries
 ### Revenue per Customer
-SELECT 
-    s.CustomerKey,
-    SUM(s.OrderQuantity * p.ProductPrice) AS total_spent
-FROM sales s
-JOIN product_lookup p
-ON s.ProductKey = p.ProductKey
-GROUP BY s.CustomerKey;
+- SELECT 
+-  s.CustomerKey,
+-  SUM(s.OrderQuantity * p.ProductPrice) AS total_spent
+- FROM sales s
+- JOIN product_lookup p ON s.ProductKey = p.ProductKey
+- GROUP BY s.CustomerKey;
 
 ### Running Total of Revenue
-SELECT 
-    OrderDate,
-    SUM(s.OrderQuantity * p.ProductPrice) AS daily_revenue,
-    SUM(SUM(s.OrderQuantity * p.ProductPrice))
-        OVER (ORDER BY OrderDate) AS running_total
-FROM sales s
-JOIN product_lookup p
-ON s.ProductKey = p.ProductKey
-GROUP BY OrderDate;
+- SELECT 
+-  OrderDate,
+-  SUM(s.OrderQuantity * p.ProductPrice) AS daily_revenue,
+-  SUM(SUM(s.OrderQuantity * p.ProductPrice)) OVER (ORDER BY OrderDate) AS running_total
+- FROM sales s
+- JOIN product_lookup p ON s.ProductKey = p.ProductKey
+- GROUP BY OrderDate;
 
 
 ## Key Business Insights
