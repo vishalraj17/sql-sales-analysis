@@ -125,13 +125,13 @@ GROUP BY OrderDate;
 
 ## Folder Structure
 sql-sales-analysis
-│
-├── data/
-├── schema/
-├── queries/
-├── screenshots/
-├── docs/
-└── README.md
+ │
+ ├── data/
+ ├── schema/
+ ├── queries/
+ ├── screenshots/
+ ├── docs/
+ └── README.md
 
 
 ## Learnings & Outcomes
@@ -144,8 +144,8 @@ sql-sales-analysis
 
 - Gained experience in documenting analytical work professionally.
 
-'
+
 ## Author
-Vishal Raj
-Aspiring Data Analyst
-Skills: SQL | MySQL | Power BI | Excel | Data Analysis
+- Vishal Raj
+- Aspiring Data Analyst
+- Skills: SQL | MySQL | Power BI | Excel | Data Analysis
